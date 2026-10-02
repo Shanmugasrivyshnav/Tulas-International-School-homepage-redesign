@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, ArrowUpRight, Menu, Moon, Sun, X } from "lucide-react";
 import {
+  LogoHeader,
   Button,
   Container,
   Header,
@@ -31,7 +32,12 @@ export function SiteHeader({ theme, onThemeToggle }) {
       <Container>
         <TopNav>
           <a href="#top" aria-label="Tulas International School home">
-            <SiteLogo aria-hidden="true">T</SiteLogo>
+            <SiteLogo aria-hidden="true">
+              <LogoHeader
+                src="/images/Tsi-school-Logo-main1.png"
+                alt="Tulas International School Logo"
+              />
+            </SiteLogo>
             <span className="brand-name">
               Tulas International
               <small>School · Dehradun</small>

@@ -134,9 +134,8 @@ export const TopNav = styled.nav`
     }
   }
 `;
-
-export const SiteLogo = styled.span`
-  width: 38px;
+export const SiteLogo = styled.span``;
+/*width: 38px;
   height: 38px;
   display: grid;
   place-items: center;
@@ -148,8 +147,7 @@ export const SiteLogo = styled.span`
   @media (max-width: 360px) {
     width: 34px;
     height: 34px;
-  }
-`;
+  }*/
 
 export const MainNav = styled.div`
   display: flex;
@@ -390,4 +388,10 @@ export const FooterGrid = styled.div`
     grid-template-columns: 1fr;
     gap: 32px;
   }
+`;
+export const LogoHeader = styled.img`
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
 `;
