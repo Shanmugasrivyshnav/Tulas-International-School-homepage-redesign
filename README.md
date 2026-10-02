@@ -4,7 +4,7 @@ A responsive, animated, single-page homepage redesign for Tulas International Sc
 
 ## Live Demo
 
-- **Live URL:** [add public Vercel / Netlify link here]
+- **Live URL:** https://tulas-international-school-homepage.vercel.app/
 - **Repository:** https://github.com/Shanmugasrivyshnav/Tulas-International-School-homepage-redesign
 
 ## Tech Stack
