@@ -12,9 +12,9 @@ A responsive, animated, single-page homepage redesign for Tulas International Sc
 - **Framework:** React 19 with Vite 8
 - **Styling:** styled-components (responsive design system and theme tokens)
 - **Animation:** Framer Motion (scroll reveals, scroll progress, transitions)
-- **Icons:** Lucide React
+- **Icons:** Lucide React / React icons
 - **Linting:** ESLint
-- **Deployment:** Vercel or Netlify
+- **Deployment:** Vercel
 
 ## Features
 
