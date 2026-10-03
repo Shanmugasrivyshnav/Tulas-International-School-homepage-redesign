@@ -83,7 +83,9 @@ export const Page = styled.div`
     color: var(--coral-dark);
     transition: transform 180ms ease;
   }
-  .underlined-link:hover svg {
+  .underlined-link:hover svg,
+  .underlined-link:focus-visible svg,
+  .underlined-link:active svg {
     transform: translate(2px, -2px);
   }
   .campus-section {
@@ -129,6 +131,14 @@ export const Page = styled.div`
     color: #fff;
     font-size: 15px;
     font-weight: 700;
+  }
+  .campus-overlay > a svg {
+    transition: transform 180ms ease;
+  }
+  .campus-overlay > a:hover svg,
+  .campus-overlay > a:focus-visible svg,
+  .campus-overlay > a:active svg {
+    transform: translate(2px, -2px);
   }
   .campus-overlay > a svg {
     color: var(--coral);

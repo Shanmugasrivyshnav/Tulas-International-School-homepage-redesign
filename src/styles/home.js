@@ -131,7 +131,9 @@ export const HeroContent = styled.div`
     color: var(--coral);
     transition: transform 180ms ease;
   }
-  .text-link:hover svg {
+  .text-link:hover svg,
+  .text-link:focus-visible svg,
+  .text-link:active svg {
     transform: translateY(3px);
   }
   @media (max-width: 760px) {
@@ -354,7 +356,8 @@ export const AboutImage = styled.img`
   object-fit: cover;
   object-position: center;
   transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
-  ${ImageWrap}:hover & {
+  ${ImageWrap}:hover &,
+  ${ImageWrap}:active & {
     transform: scale(1.035);
   }
 `;

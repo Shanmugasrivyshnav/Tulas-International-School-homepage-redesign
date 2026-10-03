@@ -81,7 +81,9 @@ export const TwoColumn = styled.div`
     object-fit: cover;
     transition: transform 600ms ease;
   }
-  .programme:hover .programme-image img {
+  .programme:hover .programme-image img,
+  .programme:active .programme-image img,
+  .programme:focus-within .programme-image img {
     transform: scale(1.045);
   }
   .programme-image > span {

@@ -175,10 +175,13 @@ export const MainNav = styled.div`
     transition: transform 220ms ease;
   }
   a:hover::after,
-  a:focus-visible::after {
+  a:focus-visible::after,
+  a:active::after {
     transform: scaleX(1);
   }
-  a:hover {
+  a:hover,
+  a:focus-visible,
+  a:active {
     color: var(--coral);
   }
   @media (max-width: 900px) {
@@ -199,10 +202,14 @@ export const ThemeButton = styled.button`
   transition:
     color 200ms ease,
     background 200ms ease,
-    border-color 200ms ease;
+    border-color 200ms ease,
+    transform 160ms ease;
   &:hover {
     color: var(--deep);
     background: #fff;
+  }
+  &:active {
+    transform: scale(0.94);
   }
   @media (max-width: 360px) {
     width: 34px;
@@ -236,8 +243,13 @@ export const Button = styled.a`
     background: var(--coral-dark);
     transform: translateY(-2px);
   }
-  &:hover svg {
+  &:hover svg,
+  &:focus-visible svg,
+  &:active svg {
     transform: translate(2px, -2px);
+  }
+  &:active {
+    transform: scale(0.98);
   }
   ${({ $small }) => $small && "min-height: 40px;"}
 `;
@@ -252,6 +264,18 @@ export const MenuButton = styled.button`
   background: transparent;
   color: inherit;
   cursor: pointer;
+  transition:
+    color 180ms ease,
+    background 180ms ease;
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: var(--coral);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  &:active {
+    transform: scale(0.94);
+  }
   @media (max-width: 900px) {
     display: grid;
   }
@@ -275,6 +299,7 @@ export const MobileMenu = styled(motion.div).attrs(({ $open }) => ({
   padding: 0 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   background: var(--deep);
+  color: #f3f1e8;
   a:not(${Button}) {
     display: flex;
     align-items: center;
@@ -282,6 +307,20 @@ export const MobileMenu = styled(motion.div).attrs(({ $open }) => ({
     padding: 14px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     font-size: 14px;
+    transition: color 180ms ease;
+  }
+  a:not(${Button}):hover,
+  a:not(${Button}):focus-visible,
+  a:not(${Button}):active {
+    color: var(--coral);
+  }
+  a:not(${Button}) svg {
+    transition: transform 180ms ease;
+  }
+  a:not(${Button}):hover svg,
+  a:not(${Button}):focus-visible svg,
+  a:not(${Button}):active svg {
+    transform: translate(2px, -2px);
   }
   ${Button} {
     width: 100%;
@@ -299,7 +338,9 @@ export const Footer = styled.footer`
   a {
     transition: color 180ms ease;
   }
-  a:hover {
+  a:hover,
+  a:focus-visible,
+  a:active {
     color: var(--coral);
   }
   .footer-brand > a {

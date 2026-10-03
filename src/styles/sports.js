@@ -80,15 +80,19 @@ export const SportButton = styled.button`
     flex: 0 0 auto;
   }
   &:hover svg,
-  &:focus-visible svg {
+  &:focus-visible svg,
+  &:active svg {
     opacity: 1;
   }
-  &:hover {
+  &:hover,
+  &:focus-visible,
+  &:active {
     background: var(--surface-soft);
     color: var(--ink);
   }
   ${({ $active }) =>
-    $active && "&:hover { background: var(--green); color: var(--paper); }"}
+    $active &&
+    "&:hover, &:focus-visible, &:active { background: var(--green); color: var(--paper); }"}
 `;
 
 export const RecognitionGrid = styled.div`

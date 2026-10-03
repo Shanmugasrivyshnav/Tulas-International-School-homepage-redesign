@@ -28,7 +28,14 @@ export const StoryButton = styled.button`
     opacity: ${({ $active }) => ($active ? 1 : 0)};
     transition: opacity 180ms ease;
   }
-  &:hover {
+  &:hover > svg,
+  &:focus-visible > svg,
+  &:active > svg {
+    opacity: 1;
+  }
+  &:hover,
+  &:focus-visible,
+  &:active {
     background: rgba(255, 255, 255, 0.08);
     color: #fff;
   }
