@@ -14,7 +14,7 @@ import { RevealBlock } from "../animation/RevealBlock";
 import { AccentText, SectionTitle } from "./SectionTitle";
 
 export function SportsRecognitionSections() {
-  const [activeSport, setActiveSport] = useState("Football");
+  const [activeSport, setActiveSport] = useState(sports[0]);
 
   return (
     <>

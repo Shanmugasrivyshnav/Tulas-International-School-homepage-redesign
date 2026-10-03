@@ -27,6 +27,7 @@ export const SportsVisual = styled.div`
     object-fit: cover;
     will-change: opacity, transform;
   }
+
   &::after {
     content: "";
     position: absolute;

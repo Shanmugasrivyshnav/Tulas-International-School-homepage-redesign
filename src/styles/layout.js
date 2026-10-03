@@ -390,8 +390,8 @@ export const FooterGrid = styled.div`
   }
 `;
 export const LogoHeader = styled.img`
-  width: 55px;
-  height: 55px;
+  width: 75px;
+  height: 65px;
   object-fit: contain;
   display: block;
 `;
